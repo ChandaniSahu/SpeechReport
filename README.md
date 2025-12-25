@@ -10,7 +10,7 @@ Visit here :[https://speech-report.netlify.app/](https://speech-report.netlify.a
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/ChandaniSahu/SpeechScore.git
+git clone https://github.com/ChandaniSahu/SpeechReport.git
 ```
 
 2. Install dependencies:
@@ -82,6 +82,7 @@ The feedback logic works on the basis of these conditions
 ## Customization
 
 - Update `src/reportData.ts` to change sample data
+
 
 
 
