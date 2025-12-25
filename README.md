@@ -64,9 +64,24 @@ The application uses a simple data structure for speech scores:
   }>,
 }
 ```
+## How Feedback Logic Works 
+
+The feedback logic works on the basis of these conditions 
+
+```text
+  if (score >= 7) 
+    "Excellent performance with strong clarity and control.";
+  
+  if (score >= 4) 
+   "Satisfactory performance with some noticeable inaccuracies.";
+  
+   if(score < 4)
+   "Needs significant improvement in clarity and accuracy.";
+```
 
 ## Customization
 
 - Update `src/data/reportData.ts` to change sample data
+
 
 
