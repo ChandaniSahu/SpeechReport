@@ -5,5 +5,8 @@ export const getFeedback = (score) => {
   if (score >= 4) {
     return "Satisfactory performance with some noticeable inaccuracies.";
   }
-  return "Needs significant improvement in clarity and accuracy.";
-};
+  if(score < 4) {
+    return "Needs significant improvement in clarity and accuracy.";
+  }
+
+}

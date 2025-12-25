@@ -5,7 +5,7 @@ const SkillScoreBar = ({ label, score }) => {
 const getBarColor = (score) => {
   if (score >= 7) return "bg-green-500";
   if (score >= 4) return "bg-orange-400";
-  return "bg-red-500";
+  if (score < 4) return "bg-red-500";
 };
 
 
