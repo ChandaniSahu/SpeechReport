@@ -81,7 +81,8 @@ The feedback logic works on the basis of these conditions
 
 ## Customization
 
-- Update `src/data/reportData.ts` to change sample data
+- Update `src/reportData.ts` to change sample data
+
 
 
 
