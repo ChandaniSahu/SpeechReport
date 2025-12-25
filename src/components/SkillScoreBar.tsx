@@ -1,11 +1,17 @@
 import React from 'react';
-type Props = {
-  label: string;
-  score: number;
+
+const SkillScoreBar = ({ label, score }) => {
+
+const getBarColor = (score) => {
+  if (score >= 7) return "bg-green-500";
+  if (score >= 4) return "bg-orange-400";
+  return "bg-red-500";
 };
 
-const SkillScoreBar = ({ label, score }: Props) => {
+
+
   const percentage = (score / 9) * 100;
+  const barColor = getBarColor(score);
 
   return (
     <div className="mb-4">
@@ -16,12 +22,13 @@ const SkillScoreBar = ({ label, score }: Props) => {
 
       <div className="w-full bg-gray-200 rounded-full h-2">
         <div
-          className="bg-blue-600 h-2 rounded-full"
+          className={`${barColor} h-2 rounded-full`}
           style={{ width: `${percentage}%` }}
         />
       </div>
     </div>
   );
 };
+
 
 export default SkillScoreBar;

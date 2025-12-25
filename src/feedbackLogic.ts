@@ -1,9 +1,9 @@
-export const getFeedback = (score: number): string => {
-  if (score >= 8) {
-    return "Excellent performance with strong control.";
+export const getFeedback = (score) => {
+  if (score >= 7) {
+    return "Excellent performance with strong clarity and control.";
   }
-  if (score >= 6 && score <= 7) {
-    return "Good performance with minor inaccuracies.";
+  if (score >= 4) {
+    return "Satisfactory performance with some noticeable inaccuracies.";
   }
-  return "Needs improvement.";
+  return "Needs significant improvement in clarity and accuracy.";
 };

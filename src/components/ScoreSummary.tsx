@@ -1,12 +1,7 @@
 import React from "react";
 import SkillScoreBar from "./SkillScoreBar";
 
-type Props = {
-  overallScore: number;
-  skills: Record<string, number>;
-};
-
-const ScoreSummary = ({ overallScore, skills }: Props) => {
+const ScoreSummary = ({ overallScore, skills }) => {
   return (
     <div className="bg-white p-6 rounded-lg shadow">
       <h2 className="text-3xl font-semibold mb-4">Summary of Scores</h2>
